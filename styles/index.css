@@ -119,3 +119,39 @@ main div {
   border-top-color: var(--blue);
 }
 
+@media screen and (min-width: 750px) {
+  .container {
+    margin-bottom: 62px;
+  }
+
+  .feature-section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .feature-section__supervisor {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .feature-section__team-builder {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .feature-section__karma {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .feature-section__calculator {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .card__icon {
+    width: 68px;
+    height: 68px;
+  }
+}
