@@ -17,6 +17,7 @@
 }
 
 body {
+  min-width: 320px;
   color: var(--grayish-blue);
   background: var(--very-light-gray);
   font-family: "Poppins", sans-serif;
@@ -38,6 +39,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 10px;
+  text-align: center;
 }
 
 h1,
@@ -61,13 +64,10 @@ h1 span {
   font-weight: 600;
 }
 
-main div {
-  text-align: center;
-}
-
 .container {
   max-width: 514px;
   margin: 30px 0 76px 0;
+  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -117,6 +117,11 @@ main div {
 
 .card--blue {
   border-top-color: var(--blue);
+}
+
+.card:hover img {
+  transition: all 0.3s ease-in-out;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
 }
 
 @media screen and (min-width: 750px) {
